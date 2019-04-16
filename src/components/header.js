@@ -11,7 +11,7 @@ class Header extends Component{
                     <div className="row">
                         <div className="col-lg-12 col-sm-12 col-xs-12">
                             <div className="text-center mb-20">
-                                <h1>Welcome To My PIN Project!</h1>
+                                <h1>Welcome To My "React" PIN Project!</h1>
                                 <p>See Bellow my projects pins</p>
                             </div>
                         </div>
