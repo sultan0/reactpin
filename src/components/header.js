@@ -20,7 +20,7 @@ class Header extends Component{
                     <div className="row">
                         <div className="col-lg-3 col-sm-4 col-xs-12">
                             <div className="card border-dark mb-3">
-                                <div className="card-header">Pin Project 1</div>
+                                <div className="card-header">Axios API Data</div>
                                 <div className="card-body text-dark">
                                     <h5 className="card-title">View Data From API</h5>
                                     <p className="card-text">using jsx-component, props, state, map in react</p>
@@ -30,10 +30,10 @@ class Header extends Component{
                         </div>
                         <div className="col-lg-3 col-sm-4 col-xs-12">
                             <div className="card border-dark mb-3">
-                                <div className="card-header">Menu 2</div>
+                                <div className="card-header">Notification Status</div>
                                 <div className="card-body text-dark">
-                                    <h5 className="card-title">Dark card title</h5>
-                                    <p className="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                                    <h5 className="card-title">Notification Status</h5>
+                                    <p className="card-text">Show Read/Unread notification from array.</p>
                                     <Link to="/menu2" className="btn btn-primary">Go</Link>  
                                 </div>
                             </div>
