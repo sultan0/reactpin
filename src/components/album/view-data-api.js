@@ -56,6 +56,8 @@ class ViewDataAPI extends Component{
                                         )
                                     }   
                             </div>
+
+                            {/* here is im using params, and to match by clicking specific id to show/view more information */}
                             <div className="row">  
                                   {posts && (
                                        <Route path="/album/:albumId" 
@@ -79,6 +81,7 @@ class ViewDataAPI extends Component{
 export default ViewDataAPI;
 
 
+// This component using for show details
 const ViewPosts = ({posts}) =>{  
         return( 
             <div className="col-lg-6"> 
