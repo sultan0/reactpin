@@ -1,8 +1,6 @@
 import React, { Component } from 'react';
-import Album from './album'
-import { Link, BrowserRouter as Router, Route } from 'react-router-dom'
-
-import axios from "axios"
+import axios from 'axios';
+import Album from './album';
 
 class ViewDataAPI extends Component {
 
@@ -28,7 +26,6 @@ class ViewDataAPI extends Component {
         }
         else {
             return (
-                <Router>
                     <div className="header">
                         <div className="container">
                             <div className="row">
@@ -36,7 +33,7 @@ class ViewDataAPI extends Component {
                                     <div className="text-center mb-20">
                                         <h1>View Data From API</h1>
                                         <p>using jsx-component, props, state, map, react router, router parameter in react </p>
-  
+
                                     </div>
                                 </div>
                             </div>
@@ -51,7 +48,6 @@ class ViewDataAPI extends Component {
                                                     email={post.email}
                                                     body={post.body}
                                                     view={post.id}
-
                                                 />
                                             )
                                         }
@@ -59,18 +55,11 @@ class ViewDataAPI extends Component {
                                     }
                                 </div>
                                 <div className="col-lg-8">
-                                    {posts && (
-                                        <Route exact path="/album/:albumId"
-                                            render={({ match }) => (
-                                                <ViewPosts posts={(posts.find(pv => pv.id === parseInt(match.params.albumId)))} />
-                                            )}
-                                        />
-                                    )}
+
                                 </div>
                             </div>
                         </div>
                     </div>
-                </Router>
             )
         }
 
@@ -79,20 +68,3 @@ class ViewDataAPI extends Component {
 }
 
 export default ViewDataAPI;
-
-
-// This component using for show details
-const ViewPosts = ({ posts }) => {
-    return (
-        <div className="card border-dark mb-3">
-            <div className="card-body text-dark">
-                <div className="album">
-                    <h2>{posts.name}</h2>
-                    <p>{posts.email}</p>
-                    <p>{posts.body}</p>
-                </div>
-            </div>
-        </div>
-    );
-
-}
